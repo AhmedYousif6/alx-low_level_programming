@@ -8,7 +8,7 @@
  * Return: always 0 (success)
 */
 
-int main()
+int main(void)
 {
 	int i = 0, j = 1;
 
