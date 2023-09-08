@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * Description: prints random valu posative or negative
+ * Description: prints random value posative or negative
  *
  * Return: Always 0 (success)
 */
