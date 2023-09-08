@@ -2,9 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/** main - Entry point
+/*
+ * main - Entry point
  *
- * Description: A C program that prints random valus and define if its posative or negative
+ * Description: prints random valu posative or negative
  *
  * Return: Always 0 (success)
 */
