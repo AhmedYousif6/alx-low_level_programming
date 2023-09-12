@@ -3,8 +3,9 @@
 /**
  * _islower - check if its lower case
  *
- * Return: 1 if c is lower case character
- * 	0 otherwise (success)
+ * Dc: the input tha will checked
+ *
+ * Return: 1 if c is lower case character 0 otherwise (success)
 */
 
 int _islower(int c)
