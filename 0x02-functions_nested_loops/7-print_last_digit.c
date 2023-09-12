@@ -5,16 +5,16 @@
  *
  * @n: takes number input
  *
- * Return: lastDigit*/
+ * Return: r*/
 
 int print_last_digit(int n)
 {
-	int lastDigit;
+	int r;
 
-	if (lastDigit < 0)
-		lastDigit = -1 * (n % 10);
+	if (r < 0)
+		r = -1 * (n % 10);
 	else
-		lastDigit = n % 10;
-	_putchar(lastDigit + '0');
-	return (lastDigit);
+		r = n % 10;
+	_putchar(r + '0');
+	return (r);
 }
