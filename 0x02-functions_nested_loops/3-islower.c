@@ -3,7 +3,7 @@
 /**
  * _islower - check if its lower case
  *
- * Dc: the input tha will checked
+ * Description c: check input of function
  *
  * Return: 1 if c is lower case character 0 otherwise (success)
 */
