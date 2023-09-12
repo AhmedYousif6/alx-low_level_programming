@@ -5,7 +5,8 @@
  *
  * @c: take input from other func
  *
- * Return: 1 if c is true 0 else*/
+ * Return: 1 if c is true 0 else
+*/
 
 int _isalpha(int c)
 {
