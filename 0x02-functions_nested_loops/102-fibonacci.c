@@ -10,18 +10,19 @@
 
 int main(void)
 {
-	int prev1 = 1;
-	int prev2 = 2;
-	int current = 0;
+	long prev1 = 1;
+	long prev2 = 2;
+	long current = 0;
 	int i;
 
-	printf("%d, %d", prev1, prev2);
-	for (i = 2; i < 50; i++)
+	printf("%ld, %ld", prev1, prev2);
+	printf(", ");
+	for (i = 3; i <= 50; i++)
 	{
 		current = prev1 + prev2;
-		printf("%d", current);
+		printf("%ld", current);
 
-		if (i != 49)
+		if (i != 50)
 		{
 			printf(", ");
 		}
