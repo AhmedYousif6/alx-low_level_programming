@@ -13,19 +13,19 @@ int main(void)
 	int prev1 = 1;
 	int prev2 = 2;
 	int sum = 0;
-	int current;
+	int current = 0;
 
 	while (prev2 <= 4000000)
 	{
 		if (prev2 % 2 == 0)
 		{
 		sum += prev2;
-		printf("%d", sum);
 		}
 	current = prev1 + prev2;
 		prev1 = prev2;
 		prev2 = current;
 	}
+	printf("%d", sum);
 	printf("\n");
 	return (0);
 }
