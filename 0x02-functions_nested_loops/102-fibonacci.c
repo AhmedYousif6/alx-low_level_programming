@@ -13,9 +13,10 @@ int main(void)
 	int prev1 = 1;
 	int prev2 = 2;
 	int current = 0;
+	int i;
 
 	printf("%d, %d", prev1, prev2);
-	for (int i = 2; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		current = prev1 + prev2;
 		printf("%d", current);
