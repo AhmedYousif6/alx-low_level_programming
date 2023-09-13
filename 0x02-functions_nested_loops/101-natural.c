@@ -5,9 +5,10 @@
  *
  * Description: print the sum of num multiples of 3, 9 less than 1024
  *
- * Return: always 0 (success)*/
+ * Return: always 0 (success)
+*/
 
-int main()
+int main(void)
 {
 	int sum = 0;
 	int i;
