@@ -13,13 +13,16 @@ int main(void)
 	int prev1 = 1;
 	int prev2 = 2;
 	int sum = 0;
+	int current;
 
 	while (prev2 <= 4000000)
 	{
 		if (prev2 % 2 == 0)
+		{
 		sum += prev2;
 		printf("%d", sum);
-	int current = prev1 + prev2;
+		}
+	current = prev1 + prev2;
 		prev1 = prev2;
 		prev2 = current;
 	}
