@@ -19,7 +19,7 @@ char *leet(char *ch)
 		{
 			if (*ch == letter[i] || *ch == letter[i] + 32)
 			{
-			*ch = 49 + value[i];
+			*ch = 48 + value[i];
 			}
 		}
 	ch++;
