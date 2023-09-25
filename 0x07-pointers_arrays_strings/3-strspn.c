@@ -3,7 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring.
  * @s: takes string1
- * takes string2
+ * @accept: takes string2
  * Return: integer
 */
 
