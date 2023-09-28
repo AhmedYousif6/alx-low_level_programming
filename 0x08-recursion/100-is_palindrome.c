@@ -17,6 +17,7 @@ int length(char *s)
 	{
 		count += length(s + 1) + 1;
 	}
+	return (count);
 }
 
 /**
