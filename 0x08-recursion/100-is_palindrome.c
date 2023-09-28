@@ -2,7 +2,6 @@
 
 int length(char *s);
 int check(char *s, int start, int end, int m);
-int is_palindrome(char *s);
 
 /**
  * length - find the length of a string
