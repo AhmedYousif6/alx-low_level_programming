@@ -7,9 +7,11 @@
  * Return: 0 always (success)
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
+	int c = argc - 1;
+
 	(void)argv;
-	printf("%d\n", argc);
+	printf("%d\n", c);
 	return (0);
 }
