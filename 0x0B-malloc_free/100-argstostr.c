@@ -18,6 +18,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < ac; i++)
 	{
 		len += strlen(av[i]);
@@ -29,6 +30,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < ac; i++)
 	{
 		x = strlen(av[i]);
@@ -39,6 +41,6 @@ char *argstostr(int ac, char **av)
 			conc[s++] = '\n';
 		}
 	}
-	conc = '\0';
+	conc[s] = '\0';
 	return (conc);
 }
