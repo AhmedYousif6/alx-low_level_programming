@@ -12,14 +12,13 @@
 char *argstostr(int ac, char **av)
 {
 	char *conc;
-	int i, x, s, len = 0;
+	int i, k, x = 0, s = 0, len = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
+
 	for (i = 0; i < ac; i++)
 	{
 		len += strlen(av[i]);
@@ -32,17 +31,16 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (i = 0; i < ac; i++)
+	for (k = 0; k < ac; k++)
 	{
-		x = strlen(av[i]);
-		strcpy(conc + s, av[i]);
+		x = strlen(av[k]);
+		strcpy(conc + s, av[k]);
 		s += x;
-		if (i != ac - 1)
+		if (k != ac - 1)
 		{
 			conc[s++] = '\n';
 		}
 	}
 	conc[s] = '\0';
-	}
 	return (conc);
 }
