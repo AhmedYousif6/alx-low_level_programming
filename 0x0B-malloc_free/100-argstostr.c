@@ -30,15 +30,12 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (k = 0; k < ac; k++)
+	for (i = 0; i < ac; i++)
 	{
-		x = strlen(av[k]);
-		strcpy(conc + s, av[k]);
-		s += x;
-		if (k != ac - 1)
-		{
-			conc[s++] = '\n';
-		}
+		for (k = 0; av[i][k] != '\0'; k++, s++)
+			conc[s] = av[i][k];
+		conc[s] = '\n';
+		s++;
 	}
 	conc[s] = '\0';
 	return (conc);
