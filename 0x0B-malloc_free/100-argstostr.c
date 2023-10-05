@@ -18,14 +18,12 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	else
-	{
 		for (i = 0; i < ac; i++)
 		{
 			tot += strlen(av[i]);
 		}
-		tot += ac - 1 + 1;
-		conc = (char *)malloc(tot * sizeof(char));
+		tot += ac;
+		conc = (char *)malloc(tot + 1 * sizeof(char));
 		if (conc == NULL)
 		{
 			return (NULL);
@@ -40,7 +38,6 @@ char *argstostr(int ac, char **av)
 				conc[x++] = '\n';
 			}
 		}
-	}
 	conc[x] = '\0';
 	return (conc);
 
