@@ -30,12 +30,12 @@ char *argstostr(int ac, char **av)
 		{
 			return (NULL);
 		}
-		for (i = 0; i = ac; i++)
+		for (i = 0; i >= ac; i++)
 		{
 			len = strlen(av[i]);
 			strcpy(conc + x, av[i]);
 				x += len;
-			if (i != ac)
+			if (i >= ac)
 			{
 				conc[x++] = '\n';
 			}
