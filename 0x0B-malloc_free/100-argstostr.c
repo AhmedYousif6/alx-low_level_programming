@@ -24,18 +24,18 @@ char *argstostr(int ac, char **av)
 		{
 			tot += strlen(av[i]);
 		}
-		tot += ac;
-		conc = (char *)malloc(tot + 1 * sizeof(char));
+		tot += ac - 1 + 1;
+		conc = (char *)malloc(tot * sizeof(char));
 		if (conc == NULL)
 		{
 			return (NULL);
 		}
-		for (i = 0; i >= ac; i++)
+		for (i = 0; i < ac; i++)
 		{
 			len = strlen(av[i]);
 			strcpy(conc + x, av[i]);
 				x += len;
-			if (i != ac)
+			if (i != ac - 1)
 			{
 				conc[x++] = '\n';
 			}
