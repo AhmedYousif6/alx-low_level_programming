@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 			len = strlen(av[i]);
 			strcpy(conc + x, av[i]);
 				x += len;
-			if (i >= ac)
+			if (i != ac)
 			{
 				conc[x++] = '\n';
 			}
