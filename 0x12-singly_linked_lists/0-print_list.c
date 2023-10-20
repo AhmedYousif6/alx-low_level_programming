@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 
 /**
  * print_list - print a linked list.
@@ -8,13 +8,13 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t count = 0;
 
 	while (h)
 	{
 		printf("[%d] &s\n", strlen(h->str), h->str ? h->str : "(nil)";
 				h = h->next;
-				i++;
+				count;
 	}
-	return (i);
+	return (count);
 }
