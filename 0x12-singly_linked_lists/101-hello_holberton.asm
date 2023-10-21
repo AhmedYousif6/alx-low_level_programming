@@ -3,9 +3,10 @@ section		.text
 	global	main
 
 main:
-	mov		edi, str
+	mov		edi, dat
 	mov		eax, 0
 	call	printf
 
+
 section		.data
-	str db 'Hello, Holberton', 0xa, 0
+	dat db 'Hello, Holberton', 0xa, 0
